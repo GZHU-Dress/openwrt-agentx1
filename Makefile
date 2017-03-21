@@ -27,7 +27,7 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/Object/agentx1 $(1)/bin/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/agentx1 $(1)/bin/
 endef
 
 $(eval $(call BuildPackage,agentx1))
