@@ -23,5 +23,5 @@ Then choose `agentx1` in section `Utilitiess` and save config.
 
 Execute `make V=s` to start compilation. 
 
-You probably would see some errors after `Signing package index...`. Ignore them. The SDK has built `.ipk` package and put them into `/path/to/your/sdk/bin/targets/your-arch/your-soc-model/packages`.
+You probably would see some errors after `Signing package index...`. Ignore them. The SDK has built `.ipk` package and put them into `/path/to/your/sdk/bin/packages/your-arch/base`.
 
