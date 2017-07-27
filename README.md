@@ -15,11 +15,11 @@ cd /path/to/your/sdk/package
 git clone https://github.com/balthild/agentx1-lede
 cd agentx1-lede
 hg clone https://bitbucket.org/CrazyBoyFeng/agentx1 src
-cd ..
+cd ../..
 make menuconfig
 ```
 
-Then choose `agentx1` in section `Utilitiess` and save config.
+Then choose `agentx1` in section `Utilities` and save config.
 
 Execute `make V=s` to start compilation. 
 
