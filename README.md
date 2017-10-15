@@ -1,27 +1,12 @@
 # agentx1 for LEDE/OpenWRT
 
-## Requirement
-
-* gcc
-* git
-* hg
-
 ## Build
 
 First download [LEDE SDK](https://downloads.lede-project.org/releases/) for your device.
 
-```bash
-cd /path/to/your/sdk/package
-git clone https://github.com/balthild/agentx1-lede
-cd agentx1-lede
-hg clone https://bitbucket.org/CrazyBoyFeng/agentx1 src
-cd ../..
-make menuconfig
+```sh
+cd /path/to/your/sdk
+git clone https://github.com/GZHU-Dress/openwrt-agentx1.git package/agentx1
+make menuconfig # choose `agentx1` in section `Utilities`
+make package/agentx1/compile V=s
 ```
-
-Then choose `agentx1` in section `Utilities` and save config.
-
-Execute `make V=s` to start compilation. 
-
-You probably would see some errors after `Signing package index...`. Ignore them. The SDK has built `.ipk` package and put them into `/path/to/your/sdk/bin/packages/your-arch/base`.
-
