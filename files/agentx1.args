@@ -1,1 +1,1 @@
--p LOCAL -a ON
+-p LOCAL -a ON -c "logger agentx1 auth success!"
